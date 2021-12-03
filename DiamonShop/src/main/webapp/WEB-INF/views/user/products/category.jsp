@@ -98,8 +98,8 @@
 	</div>
 
 	<div class="pagination">
-		<c:forEach var="item" begin="${paginateInfo.start }"
-			end="${paginateInfo.end }" varStatus="loop">
+		<c:forEach var="item" begin="1"
+			end="${paginateInfo.totalPage }" varStatus="loop">
 
 			<c:if test="${ (loop.index) == paginateInfo.currentPage }">
 

@@ -13,12 +13,13 @@ public class HomeController extends BaseController {
 		_mvShare.addObject("slides", _homeService.GetDataSlide());
 		_mvShare.addObject("categorys", _homeService.GetDataCategorys());
 		_mvShare.addObject("products", _homeService.GetDataProducts());
-		_mvShare.setViewName("user/index");
+		_mvShare.setViewName("user/products/product");
 		return _mvShare;
 	}
-	@RequestMapping(value = "/product")
-	public ModelAndView Product() {
-		ModelAndView mv = new ModelAndView("user/product");
-		return mv;
-	}
+	
+//	@RequestMapping(value = "/product/product")
+//	public ModelAndView ProductDetail() {
+//		ModelAndView mv = new ModelAndView("user/products/product");
+//		return mv;
+//	}
 }

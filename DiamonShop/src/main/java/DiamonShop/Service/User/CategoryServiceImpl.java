@@ -14,9 +14,10 @@ public class CategoryServiceImpl implements ICategoryService{
 	@Autowired
 	private ProductsDao productsDao;
 	
-	public List<ProductsDto> GetDataProductsPeginate(int start, int end){
-		List<ProductsDto> list = productsDao.GetDataProductsPeginate(start, end);
-		return list;
+	
+	public List<ProductsDto> GetDataProductsPeginate(int id,int start, int totalProductPage){
+		List<ProductsDto> list = productsDao.GetDataProductsPeginate(id,start, totalProductPage);
+		return list;	
 		
 	}
 

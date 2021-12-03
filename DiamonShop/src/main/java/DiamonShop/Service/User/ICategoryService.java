@@ -11,5 +11,5 @@ public interface ICategoryService {
 	
 	public List<ProductsDto> GetAllProductsByID(int id); 
 	
-	public List<ProductsDto> GetDataProductsPeginate(int start, int end); 
+	public List<ProductsDto> GetDataProductsPeginate(int id, int start, int totalProductPage); 
 }
