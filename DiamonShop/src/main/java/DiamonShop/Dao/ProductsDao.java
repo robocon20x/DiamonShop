@@ -102,10 +102,12 @@ public class ProductsDao extends BaseDao {
 		return list;
 	}
 
-
-
-	public List<ProductsDto> GetProductByIDCategory(long id) {
-		// TODO Auto-generated method stub
-		return null;
+	public ProductsDto FindProductByID(long id) {
+		StringBuffer  sql =  SqlString();
+		sql.append("and p.id ="+id +" ");
+		sql.append("Limit 1 ");
+		ProductsDto product = _jdbcTemplate.queryForObject(sql.toString(), new ProductsDtoMapper());
+		return product;
 	}
+
 }
