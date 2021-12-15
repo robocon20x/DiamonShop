@@ -19,7 +19,7 @@ Body Section
 	<div class="row product-content">
 		<div id="sidebar" class="span3">
 			<div class="well well-small">
-				<h1>${productByIDCategory.size() }</h1>
+				<h1>${Cart.size() }</h1>
 				<ul class="nav nav-list">
 					<li><a href="products.html"><span
 							class="icon-chevron-right"></span>Fashion</a></li>
@@ -139,7 +139,7 @@ Body Section
 						<h3>${product[0].name}</h3>
 						<hr class="soft" />
 
-						<form class="form-horizontal qtyFrm">
+						<form class="form-horizontal qtyFrm" method="get" action="<c:url value ="/AddCart/${product[0].id_product}"/>">
 							<div class="control-group">
 								<label class="control-label"><span><fmt:formatNumber
 											type="number" groupingUsed="true" value="${product[0].price}" />
@@ -164,7 +164,7 @@ Body Section
 							<p>${product[0].title}
 							<p>
 								<button type="submit" class="shopBtn">
-									<span class=" icon-shopping-cart"></span> Add to cart
+									<span class=" icon-shopping-cart"></span> Them gio hang
 								</button>
 						</form>
 					</div>
