@@ -41,7 +41,7 @@
 					<a class="active" href="index.html"> <span class="icon-home"></span>
 						Home
 					</a> <a href="#"><span class="icon-user"></span> My Account</a> <a
-						href="<c:url value="/dang-ky/"/>"><span class="icon-edit"></span> Đăng ký </a> <a href="contact.html"><span class="icon-envelope"></span>
+						href="<c:url value="/dang-ky"/>"><span class="icon-edit"></span> Đăng ký </a> <a href="contact.html"><span class="icon-envelope"></span>
 						Contact us</a> <a href="<c:url value = "/gio-hang"/>"><span
 						class="icon-shopping-cart"></span> ${TotalQuantyCart } Item(s) - <span
 						class="badge badge-warning"> <fmt:formatNumber
